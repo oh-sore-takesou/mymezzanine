@@ -16,6 +16,7 @@
 {% endifinstalled %}
 
 {% compress css %}
+<link rel="stylesheet" href="{% static "css/solarized-light.css" %}">
 <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
 <link rel="stylesheet" href="{% static "css/mezzanine.css" %}">
 
@@ -40,6 +41,7 @@
 {% endcompress %}
 
 {% compress js %}
+<script src="{% static "js/highlight.pack.js" %}"></script>
 <script src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
 <script src="{% static "js/bootstrap.js" %}"></script>
 <script src="{% static "js/bootstrap-extras.js" %}"></script>
@@ -274,5 +276,10 @@
 })(jQuery);
 </script>
 
+<script>
+$(document).ready(function() {
+ $('pre').each(function(i, e) {hljs.highlightBlock(e)});
+});
+</script>
 </body>
 </html>

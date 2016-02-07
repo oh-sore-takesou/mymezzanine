@@ -1,0 +1,198 @@
+{% extends "base.html" %}
+{% load i18n staticfiles mezzanine_tags blog_tags %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title_wrapper%}
+{% endblock %}
+{% block all_content %}
+{% block left_wrapper%}
+{% endblock %}
+
+{% block main_wrapper%}
+
+{% endblock %}
+
+{% block right_wrapper%}
+{% endblock %}
+<!-- *****************************************************************************************************************
+	 HEADERWRAP
+	 ***************************************************************************************************************** -->
+	<div id="headerwrap">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h1>Blog de Sochan</h1>
+					<h5>主に日々の日記と、プログラミングについての備忘録です。</h5>				
+				</div>
+				<div class="col-lg-8 col-lg-offset-2 himg">
+					<img src="{% static "img/browser1.jpg" %}" class="img-responsive">
+				</div>
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /headerwrap -->
+
+	<!-- *****************************************************************************************************************
+	 SERVICE LOGOS
+	 ***************************************************************************************************************** -->
+	 <div id="service">
+	 	<div class="container">
+            <h3 class="centered">What I do</h3>
+ 			<div class="row centered">
+ 				<div class="col-md-4">
+ 					<i class="fa fa-headphones"></i>
+ 					<h4>English</h4>
+                    <p>本格的な学習はしませんが、洋楽をたくさん聴きます。<br>たまに大学で、洋楽を使った勉強会を開きます。</p>
+ 				</div>
+ 				<div class="col-md-4">
+ 					<i class="fa fa-laptop"></i>
+ 					<h4>Programming</h4>
+ 					<p>大学の授業ではC言語で数値計算、趣味でPHPやPythonを使ってWebプログラミングをします。両方とも大したことはできません。</p>
+ 				</div>
+ 				<div class="col-md-4">
+ 					<i class="fa fa-book"></i>
+ 					<h4>Books</h4>
+                    <p>このブログの内容として、月に一冊読むようにしている本の感想を上げていこうと思っています。</p>
+ 				</div>		 				
+	 		</div>
+	 	</div><! --/container -->
+	 </div><! --/service -->
+	 
+	<!-- *****************************************************************************************************************
+	 PORTFOLIO SECTION
+	 ***************************************************************************************************************** -->
+	 <div id="portfoliowrap">
+        <h3>SOME PHOTOS FROM MY INSTAGRAM</h3>
+
+        <div class="portfolio-centered">
+            <div class="recentitems portfolio">
+				<div class="portfolio-item graphic-design">
+					<div class="he-wrap tpl6">
+					<img src="{% static "img/portfolio/portfolio_09.jpg" %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown"></h3>
+                                <a data-rel="prettyPhoto" href="{% static "img/portfolio/portfolio_09.jpg" %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                            
+                <div class="portfolio-item web-design">
+                    <div class="he-wrap tpl6">
+					<img src="{% static "img/portfolio/portfolio_02.jpg" %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown"></h3>
+                                <a data-rel="prettyPhoto" href="{% static "img/portfolio/portfolio_02.jpg" %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+        
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+					<img src="{% static "img/portfolio/portfolio_03.jpg" %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown"></h3>
+                                <a data-rel="prettyPhoto" href="{% static "img/portfolio/portfolio_03.jpg" %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+        
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+					<img src="{% static "img/portfolio/portfolio_04.jpg" %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown"></h3>
+                                <a data-rel="prettyPhoto" href="{% static "img/portfolio/portfolio_04.jpg" %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                                        
+                <div class="portfolio-item books">
+                    <div class="he-wrap tpl6">
+					<img src="{% static "img/portfolio/portfolio_05.jpg" %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown"></h3>
+                                <a data-rel="prettyPhoto" href="{% static "img/portfolio/portfolio_05.jpg" %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                                        
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+					<img src="{% static "img/portfolio/portfolio_06.jpg" %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown"></h3>
+                                <a data-rel="prettyPhoto" href="{% static "img/portfolio/portfolio_06.jpg" %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                    
+                <div class="portfolio-item books">
+                    <div class="he-wrap tpl6">
+					<img src="{% static "img/portfolio/portfolio_07.jpg" %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown"></h3>
+                                <a data-rel="prettyPhoto" href="{% static "img/portfolio/portfolio_07.jpg" %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                    
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+					<img src="{% static "img/portfolio/portfolio_08.jpg" %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown"></h3>
+                                <a data-rel="prettyPhoto" href="{% static "img/portfolio/portfolio_08.jpg" %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                                        
+                <div class="portfolio-item web-design">
+                    <div class="he-wrap tpl6">
+					<img src="{% static "img/portfolio/portfolio_01.jpg" %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown"></h3>
+                                <a data-rel="prettyPhoto" href="{% static "img/portfolio/portfolio_01.jpg" %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+    
+			<div class="portfolio-item books">
+                <div class="he-wrap tpl6">
+					<img src="{% static "img/portfolio/portfolio_10.jpg" %}" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown"></h3>
+                                <a data-rel="prettyPhoto" href="{% static "img/portfolio/portfolio_10.jpg" %}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                    
+            </div><!-- portfolio -->
+        </div><!-- portfolio container -->
+	 </div><!--/Portfoliowrap -->
+	 
+	 
+	<!-- *****************************************************************************************************************
+	 MIDDLE CONTENT
+	 ***************************************************************************************************************** -->
+
+	 
+{% endblock %}

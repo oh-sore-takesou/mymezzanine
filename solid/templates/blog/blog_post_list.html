@@ -95,17 +95,17 @@
 {% block blog_post_list_post_metainfo %}
 {% editable blog_post.publish_date %}
 
-	<csmall>
-    {% trans "Posted by" %}:
-    {% with blog_post.user as author %}
-    <a href="{% url "blog_post_list_author" author %}">{{ author.get_full_name|default:author.username }}</a>
-    {% endwith %}
-    </csmall>
-   |
+
+
+
+
+
+
+
     {% with blog_post.categories.all as categories %}
     {% if categories %}
      <csmall>
-    {% trans "in" %}
+    {% trans "Posted in" %}
     {% for category in categories %}
     <a href="{% url "blog_post_list_category" category.slug %}">{{ category }}</a>{% if not forloop.last %}, {% endif %}
     {% endfor %}
@@ -117,19 +117,18 @@
      <csmall>
     {% blocktrans with sometime=blog_post.publish_date|timesince %}{{ sometime }} ago{% endblocktrans %}
      </csmall>
-     |
        <csmall>
         {% if blog_post.allow_comments %}
    
     {% if settings.COMMENTS_DISQUS_SHORTNAME %}
-    <a href="{{ blog_post.get_absolute_url }}#disqus_thread"
-        data-disqus-identifier="{% disqus_id_for blog_post %}">
-        {% trans "Comments" %}
-    </a>
-    {% else %}
-    <a href="{{ blog_post.get_absolute_url }}#comments">
-        {% blocktrans count comments_count=blog_post.comments_count %}{{ comments_count }} comment{% plural %}{{ comments_count }} comments{% endblocktrans %}
-    </a>
+
+
+
+
+
+
+
+
     {% endif %}
     {% endif %}
        </csmall>
